@@ -7,21 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f7e8806-1a2d-4758-8639-5819de355f9f" name="Changes" comment="frontend update">
-      <change afterPath="$PROJECT_DIR$/K8s/configMap/server-registry-configmap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/K8s/deployment/api-gateway-deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/K8s/deployment/config-server-deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/K8s/deployment/feedbacks-deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/K8s/deployment/meteo-deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/K8s/deployment/places-deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/K8s/services/api-gateway-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/K8s/services/config-server-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/K8s/services/feedbacks-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/K8s/services/meteo-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/K8s/services/places-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/K8s/services/server-registry-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/K8s/statefulsets/server-registry-statefulset.yml" afterDir="false" />
+    <list default="true" id="2f7e8806-1a2d-4758-8639-5819de355f9f" name="Changes" comment="Added kubernetes files fo deployment">
+      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/weatherwise/apigateway/config/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,9 +22,9 @@
       <list>
         <option value="Dockerfile" />
         <option value="Kubernetes Deployment" />
-        <option value="Class" />
         <option value="Kubernetes CronJob" />
         <option value="Kubernetes Pod" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -84,7 +73,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "Spring Boot.ConfigServerApplication.executor": "Run",
     "Spring Boot.FeedbacksApplication.executor": "Run",
-    "git-widget-placeholder": "master",
+    "Spring Boot.ServerRegistryApplication.executor": "Run",
+    "git-widget-placeholder": "feature-websecurityconfig",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/tetosever/Desktop/Cloud Projects/WeatherWise/K8s/configMap",
     "node.js.detected.package.eslint": "true",
@@ -129,7 +119,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.FeedbacksApplication">
+  <component name="RunManager" selected="Spring Boot.ConfigServerApplication">
     <configuration name="All in places" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="places" />
       <option name="PACKAGE_NAME" value="" />
@@ -235,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707333049477</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added kubernetes files fo deployment">
+      <option name="closed" value="true" />
+      <created>1707516111286</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707516111286</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,7 +255,8 @@
     <MESSAGE value="frontend update" />
     <MESSAGE value="fixed Dockerfile" />
     <MESSAGE value="fixed Dockerfile errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed Dockerfile errors" />
+    <MESSAGE value="Added kubernetes files fo deployment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added kubernetes files fo deployment" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
