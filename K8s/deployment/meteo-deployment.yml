@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: meteo-service-app
+  labels:
+    app: meteo-service-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: meteo-service-app
+  template:
+    metadata:
+      labels:
+        app: meteo-service-app
+    spec:
+      containers:
+        - name: meteo-service-app
+          image: matteosevergninistudent/weatherwise:meteo-v0.0.1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8081

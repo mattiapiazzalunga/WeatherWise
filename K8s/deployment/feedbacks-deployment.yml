@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: feedbacks-service-app
+  labels:
+    app: feedbacks-service-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: feedbacks-service-app
+  template:
+    metadata:
+      labels:
+        app: feedbacks-service-app
+    spec:
+      containers:
+        - name: feedbacks-service-app
+          image: matteosevergninistudent/weatherwise:feedbacks-v0.0.1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8082

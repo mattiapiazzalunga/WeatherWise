@@ -8,10 +8,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f7e8806-1a2d-4758-8639-5819de355f9f" name="Changes" comment="frontend update">
+      <change afterPath="$PROJECT_DIR$/K8s/configMap/server-registry-configmap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/K8s/deployment/api-gateway-deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/K8s/deployment/config-server-deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/K8s/deployment/feedbacks-deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/K8s/deployment/meteo-deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/K8s/deployment/places-deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/K8s/services/api-gateway-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/K8s/services/config-server-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/K8s/services/feedbacks-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/K8s/services/meteo-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/K8s/services/places-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/K8s/services/server-registry-service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/K8s/statefulsets/server-registry-statefulset.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configurations/feedbacks.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configurations/feedbacks.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feedbacks/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/feedbacks/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feedbacks/src/main/java/com/example/feedbacks/repository/FeedbacksRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/feedbacks/src/main/java/com/example/feedbacks/repository/FeedbacksRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +34,8 @@
         <option value="Dockerfile" />
         <option value="Kubernetes Deployment" />
         <option value="Class" />
+        <option value="Kubernetes CronJob" />
+        <option value="Kubernetes Pod" />
       </list>
     </option>
   </component>
@@ -65,37 +77,21 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "JUnit.All in places.executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.ApiGatewayApplication.executor": "Run",
     "Spring Boot.ConfigServerApplication.executor": "Run",
     "Spring Boot.FeedbacksApplication.executor": "Run",
-    "Spring Boot.MeteoApplication.executor": "Run",
-    "Spring Boot.PlacesApplication (1).executor": "Run",
-    "Spring Boot.PlacesApplication.executor": "Run",
-    "Spring Boot.ServerRegistryApplication.executor": "Run",
-    "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Admin/Downloads/geodb-java-client-master/geodb-java-client-master",
+    "last_opened_file_path": "/Users/tetosever/Desktop/Cloud Projects/WeatherWise/K8s/configMap",
     "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "spring",
-    "spring.configuration.checksum": "b71c7431a8f68fb857de65b67ac9cc49",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -109,6 +105,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/K8s/configMap" />
+      <recent name="$PROJECT_DIR$/K8s/services" />
+      <recent name="$PROJECT_DIR$/K8s/deployment" />
+      <recent name="$PROJECT_DIR$/feedbacks" />
       <recent name="C:\Users\Admin\OneDrive\Desktop\Universita\WeatherWise\meteo\src\main\java\com\weatherwise\meteo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -123,6 +123,8 @@
     <option name="configurationTypes">
       <set>
         <option value="Application" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
@@ -184,6 +186,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.All in places" />
+      <item itemvalue="Spring Boot.PlacesApplication" />
+      <item itemvalue="Spring Boot.ApiGatewayApplication" />
+      <item itemvalue="Spring Boot.ConfigServerApplication" />
+      <item itemvalue="Spring Boot.FeedbacksApplication" />
+      <item itemvalue="Spring Boot.ServerRegistryApplication" />
+      <item itemvalue="Spring Boot.MeteoApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.MeteoApplication" />
@@ -194,14 +205,14 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-17.0.10-temurin-17.0.10-4caba194b151-f6707456" />
+        <option value="jdk-17.0.10-temurin-17.0.10-f644763e9732-2dd12e70" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2f7e8806-1a2d-4758-8639-5819de355f9f" name="Changes" comment="" />
+      <changelist id="c2965c94-6dd4-469c-8b59-14902bfe0ac6" name="Changes" comment="" />
       <created>1705032370834</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -216,6 +227,15 @@
       <workItem from="1707352708797" duration="5836000" />
       <workItem from="1707469820823" duration="4407000" />
     </task>
+    <task id="LOCAL-00001" summary="Forgetted feedbacks Dockerfile">
+      <option name="closed" value="true" />
+      <created>1707333049477</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707333049477</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,7 +255,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix bug" />
     <MESSAGE value="frontend update" />
-    <option name="LAST_COMMIT_MESSAGE" value="frontend update" />
+    <MESSAGE value="fixed Dockerfile" />
+    <MESSAGE value="fixed Dockerfile errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed Dockerfile errors" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

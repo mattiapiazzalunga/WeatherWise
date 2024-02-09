@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: places-service-app
+  labels:
+    app: places-service-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: places-service-app
+  template:
+    metadata:
+      labels:
+        app: places-service-app
+    spec:
+      containers:
+        - name: places-service-app
+          image: matteosevergninistudent/weatherwise:places-v0.0.1
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8083 #port of app meteo, same of dockerfile

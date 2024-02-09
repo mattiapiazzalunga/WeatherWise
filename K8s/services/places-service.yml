@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: places-service-svc
+spec:
+  selector:
+    app: places-service-app
+  #type: LoadBalancer | ClusterIP | NodePort
+  ports:
+    - port: 80
+      targetPort: 8083
