@@ -7,10 +7,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f7e8806-1a2d-4758-8639-5819de355f9f" name="Changes" comment="Added kubernetes files fo deployment">
-      <change afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/weatherwise/apigateway/config/WebSecurityConfig.java" afterDir="false" />
+    <list default="true" id="2f7e8806-1a2d-4758-8639-5819de355f9f" name="Changes" comment="Add CSP to api-gateway">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/weatherwise/apigateway/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/weatherwise/apigateway/config/WebSecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +71,7 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "Spring Boot.ApiGatewayApplication.executor": "Run",
     "Spring Boot.ConfigServerApplication.executor": "Run",
     "Spring Boot.FeedbacksApplication.executor": "Run",
     "Spring Boot.ServerRegistryApplication.executor": "Run",
@@ -233,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707516111286</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add CSP to api-gateway">
+      <option name="closed" value="true" />
+      <created>1707518649984</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707518649984</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +265,8 @@
     <MESSAGE value="fixed Dockerfile" />
     <MESSAGE value="fixed Dockerfile errors" />
     <MESSAGE value="Added kubernetes files fo deployment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added kubernetes files fo deployment" />
+    <MESSAGE value="Add CSP to api-gateway" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add CSP to api-gateway" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
