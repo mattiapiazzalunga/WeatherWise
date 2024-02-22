@@ -5,10 +5,11 @@ metadata:
   labels:
     app: frontend-service
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   ports:
   - port: 80
     targetPort: 80
+    nodePort: 32000
   selector:
     app: frontend-service
 

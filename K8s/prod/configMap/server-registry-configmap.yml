@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: eureka-cm
 data:
-  EUREKA_SERVICE_ADDRESS: "http://eureka-0.eureka:8761/eureka"
+  EUREKA_SERVICE_ADDRESS: "http://eureka.eureka:8761/eureka"
   SPRING_PROFILES_ACTIVE: "prod"
   SPRING_CONFIG_IMPORT: "configserver:http://config-server-svc:9296/"
-  REGISTRY_HOSTNAME: "eureka.default.svc.cluster.local"
+  REGISTRY_HOSTNAME: "192.168.49.2"

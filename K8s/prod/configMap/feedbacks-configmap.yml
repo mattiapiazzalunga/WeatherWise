@@ -5,6 +5,6 @@ metadata:
 data:
   SPRING_CONFIG_IMPORT: "configserver:http://config-server-svc:9296/"
   SPRING_PROFILES_ACTIVE: "prod"
-  EUREKA_SERVICE_ADDRESS: "http://eureka-0.eureka:8761/eureka"
+  EUREKA_SERVICE_ADDRESS: "http://eureka.eureka:8761/eureka"
   POSTGRES_URL_CONNECTION: "jdbc:postgresql://postgresql-service:5432/feedback"
   POSTGRESQL_USER: "soldade12"

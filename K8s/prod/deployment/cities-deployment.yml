@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cities-service-app
+  labels:
+    app: cities-service-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cities-service-app
+  template:
+    metadata:
+      labels:
+        app: cities-service-app
+    spec:
+      containers:
+        - name: cities-service-app
+          image: matteosevergninistudent/cities:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8081
+          env:
+            - name: SPRING_CONFIG_IMPORT
+              valueFrom:
+                configMapKeyRef:
+                  name: cities-config
+                  key: SPRING_CONFIG_IMPORT
+            - name: SPRING_PROFILES_ACTIVE
+              valueFrom:
+                configMapKeyRef:
+                  name: cities-config
+                  key: SPRING_PROFILES_ACTIVE
+            - name: EUREKA_SERVICE_ADDRESS
+              valueFrom:
+                configMapKeyRef:
+                  name: cities-config
+                  key: EUREKA_SERVICE_ADDRESS
+            - name: OPEN_GEONAMES_APPID
+              valueFrom:
+                secretKeyRef:
+                  name: cities-secret
+                  key: OPEN_GEONAMES_APPID

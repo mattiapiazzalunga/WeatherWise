@@ -7,28 +7,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2f7e8806-1a2d-4758-8639-5819de355f9f" name="Changes" comment="Fix MySql DB init and frontend structure">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/K8s/deployment/cities-deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/K8s/pvc/postgresql.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/K8s/secret/postgresql.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/K8s/services/cities-service.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/K8s/services/postgresql.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/K8s/services/postgresqlNP.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/K8s/statefulsets/postgresql.yml" afterDir="false" />
+    <list default="true" id="2f7e8806-1a2d-4758-8639-5819de355f9f" name="Changes" comment="Final Ingress K8s">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configurations/local/places.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configurations/local/places.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config-server/src/main/resources/configurations/prod/places.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config-server/src/main/resources/configurations/prod/places.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-service/src/FeedbackForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-service/src/InterestPoint.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-service/src/MyForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-service/src/WeatherSearch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-service/src/WeatherSearchAP.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-service/src/WeatherSearchAP.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-service/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/places/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/places/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/places/src/main/resources/db/V1__Create_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/places/src/main/resources/db/V1__Create_table.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/places/src/main/resources/db/V2__Insert_default_data.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/K8s/prod/configMap/api-gateway-configmap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/K8s/prod/configMap/api-gateway-configmap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/K8s/prod/configMap/cities-configmap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/K8s/prod/configMap/cities-configmap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/K8s/prod/configMap/config-server-configmap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/K8s/prod/configMap/config-server-configmap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/K8s/prod/configMap/feedbacks-configmap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/K8s/prod/configMap/feedbacks-configmap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/K8s/prod/configMap/meteo-configmap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/K8s/prod/configMap/meteo-configmap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/K8s/prod/configMap/places-configmap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/K8s/prod/configMap/places-configmap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/K8s/prod/configMap/server-registry-configmap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/K8s/prod/configMap/server-registry-configmap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/meteo/src/main/resources/application-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/meteo/src/main/resources/application-local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +38,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature-websecurityconfig" />
+        <entry key="$PROJECT_DIR$" value="test" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -75,13 +64,6 @@
 }</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="enabledProfiles">
-      <list>
-        <option value="nativeTest" />
-      </list>
-    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -115,7 +97,7 @@
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/tetosever/Desktop/Cloud Projects/WeatherWise/K8s/configMap&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/nicolourbani/Documenti/WeatherWise/K8s/prod/configMap&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -140,11 +122,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/K8s/prod/configMap" />
       <recent name="$PROJECT_DIR$/K8s/configMap" />
       <recent name="$PROJECT_DIR$/cities" />
       <recent name="$PROJECT_DIR$/api-gateway/src/main/resources" />
       <recent name="$PROJECT_DIR$/cities/src/main/resources" />
-      <recent name="$PROJECT_DIR$/feedbacks/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/K8s/prod" />
@@ -252,6 +234,8 @@
       <list>
         <item itemvalue="Spring Boot.MeteoApplication" />
         <item itemvalue="JUnit.All in places" />
+        <item itemvalue="Spring Boot.MeteoApplication" />
+        <item itemvalue="JUnit.All in places" />
       </list>
     </recent_temporary>
   </component>
@@ -330,7 +314,39 @@
       <option name="project" value="LOCAL" />
       <updated>1707702629752</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Final Fix K8s - with MS">
+      <option name="closed" value="true" />
+      <created>1707853722439</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707853722439</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Final Frontend Run">
+      <option name="closed" value="true" />
+      <created>1707856393443</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707856393443</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Final Frontend Run">
+      <option name="closed" value="true" />
+      <created>1707857463235</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1707857463235</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Final Ingress K8s">
+      <option name="closed" value="true" />
+      <created>1707870452889</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1707870452889</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,7 +375,10 @@
     <MESSAGE value="fixed properties for connection of kube services" />
     <MESSAGE value="test to fix problem of config server in kubernetes" />
     <MESSAGE value="Fix MySql DB init and frontend structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix MySql DB init and frontend structure" />
+    <MESSAGE value="Final Fix K8s - with MS" />
+    <MESSAGE value="Final Frontend Run" />
+    <MESSAGE value="Final Ingress K8s" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Ingress K8s" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

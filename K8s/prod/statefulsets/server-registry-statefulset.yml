@@ -20,7 +20,7 @@ spec:
           ports:
             - containerPort: 8761
           env:
-            - name: EUREKA_SERVER_ADDRESS
+            - name: EUREKA_SERVICE_ADDRESS
               valueFrom:
                 configMapKeyRef:
                   name: eureka-cm
@@ -30,6 +30,11 @@ spec:
                 configMapKeyRef:
                   name: eureka-cm
                   key: SPRING_CONFIG_IMPORT
+            - name: SPRING_PROFILES_ACTIVE
+              valueFrom:
+                configMapKeyRef:
+                  name: eureka-cm
+                  key: SPRING_PROFILES_ACTIVE
             - name: REGISTRY_HOSTNAME
               valueFrom:
                 configMapKeyRef:

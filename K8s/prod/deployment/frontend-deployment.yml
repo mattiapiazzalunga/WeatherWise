@@ -3,7 +3,7 @@ apiVersion: apps/v1
 metadata:
   name: frontend-service
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: frontend-service
@@ -17,4 +17,10 @@ spec:
         image: tetosever/frontend-service:latest
         ports:
         - containerPort: 80
+        env:
+          - name: API_GATEWAY
+            valueFrom:
+              configMapKeyRef:
+                name: frontend-config
+                key: API_GATEWAY
 

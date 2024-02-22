@@ -4,4 +4,4 @@ metadata:
   name: config-server-config
 data:
   SPRING_PROFILES_ACTIVE: "native,prod"
-  EUREKA_SERVICE_ADDRESS: "http://eureka-0.eureka:8761/eureka"
+  EUREKA_SERVICE_ADDRESS: "http://eureka.eureka:8761/eureka"
