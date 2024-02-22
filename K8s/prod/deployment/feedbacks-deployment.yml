@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: feedbacks-service-app
-          image: matteosevergninistudent/feedbacks:latest
+          image: tetosever/feedbacks:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8082

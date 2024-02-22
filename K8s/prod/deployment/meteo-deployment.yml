@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: meteo-service-app
-          image: matteosevergninistudent/meteo:latest
+          image: tetosever/meteo:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8083

@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: places-service-app
-          image: matteosevergninistudent/places:latest
+          image: tetosever/places:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8084
